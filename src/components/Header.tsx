@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Search, ShoppingBag } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -20,7 +21,6 @@ const Header: React.FC = () => {
           Free shipping on all orders over $70
         </div>
 
-
         {/* Header */}
         <header
           className={`
@@ -31,41 +31,41 @@ const Header: React.FC = () => {
           <div className="max-w-screen-xl mx-auto px-8">
             <div className="flex items-center justify-between h-20">
               {/* Logo */}
-              <a
-                href="/"
+              <Link
+                to="/"
                 className="font-mono text-2xl tracking-tighter hover:opacity-80 transition-opacity"
               >
                 taste
-              </a>
+              </Link>
 
               {/* Main Navigation */}
               <nav className="flex items-center space-x-12">
                 <div className="group relative">
-                  <a
-                    href="/drinks"
+                  <Link
+                    to="/drinks"
                     className="text-gray-800 hover:text-gray-600 transition-colors py-2"
                   >
                     Drinks
-                  </a>
+                  </Link>
                 </div>
-                <a
-                  href="/bundles"
+                <Link
+                  to="/bundles"
                   className="text-gray-800 hover:text-gray-600 transition-colors py-2"
                 >
                   Bundles
-                </a>
-                <a
-                  href="/recipes"
+                </Link>
+                <Link
+                  to="/recipes"
                   className="text-gray-800 hover:text-gray-600 transition-colors py-2"
                 >
                   Recipes
-                </a>
-                <a
-                  href="/about"
+                </Link>
+                <Link
+                  to="/about"
                   className="text-gray-800 hover:text-gray-600 transition-colors py-2"
                 >
                   About
-                </a>
+                </Link>
               </nav>
 
               {/* Actions */}
@@ -73,12 +73,12 @@ const Header: React.FC = () => {
                 <button className="p-2 hover:bg-gray-50 rounded-full transition-colors">
                   <Search className="w-5 h-5" />
                 </button>
-                <a
-                  href="/cart"
+                <Link
+                  to="/cart"
                   className="p-2 hover:bg-gray-50 rounded-full transition-colors"
                 >
                   <ShoppingBag className="w-5 h-5" />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

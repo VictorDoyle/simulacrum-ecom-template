@@ -7,14 +7,14 @@ const ProductList: React.FC = () => {
       id: 1,
       name: "Spicy Lemonade",
       price: 4.99,
-      image: "/placeholder2.jpg",
+      image: "/simulacrum-ecom-template/placeholder2.jpg",
       description: "A zingy blend with a hint of cayenne"
     },
     {
       id: 2,
       name: "Blue Lavender",
       price: 4.99,
-      image: "/placeholder1.jpg",
+      image: "/simulacrum-ecom-template/placeholder1.jpg",
       description: "Calming lavender with subtle citrus notes"
     },
   ];
@@ -34,9 +34,9 @@ const ProductList: React.FC = () => {
         {/* Products Grid */}
         <div className="grid grid-cols-3 gap-8">
           {products.map((product) => (
-            <a
+            <Link
               key={product.id}
-              href={`/product/${product.id}`}
+              to={`/product/${product.id}`}
               className="group"
             >
               <div className="bg-gray-50 rounded-lg overflow-hidden mb-4">
@@ -49,7 +49,7 @@ const ProductList: React.FC = () => {
               <h3 className="font-medium text-lg mb-2">{product.name}</h3>
               <p className="text-gray-600 mb-2">{product.description}</p>
               <p className="font-medium">${product.price.toFixed(2)}</p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Home: React.FC = () => {
   return (
@@ -14,20 +15,20 @@ const Home: React.FC = () => {
               Sweet, tart, and oh-so-refreshing probiotic lemonades
               taste like summer in every bottle.
             </p>
-            <a
-              href="/drinks"
+            <Link
+              to="/drinks"
               className="inline-block bg-black text-white px-8 py-4 
                 rounded-full font-medium hover:bg-gray-900 
                 transition-colors duration-300"
             >
               Shop Lemonades
-            </a>
+            </Link>
           </div>
 
           {/* Hero Image */}
           <div className="relative">
             <img
-              src="/placeholder1.jpg"
+              src="/simulacrum-ecom-template/placeholder1.jpg"
               alt="Colorful bottles of lemonade on ice"
               className="w-full h-auto rounded-lg shadow-xl"
             />

@@ -25,7 +25,7 @@ const About: React.FC = () => {
           </div>
           <div className="relative">
             <img
-              src="/placeholder1.jpg"
+              src="/simulacrum-ecom-template/placeholder1.jpg"
               alt="Our brewing process"
               className="rounded-lg shadow-xl"
             />

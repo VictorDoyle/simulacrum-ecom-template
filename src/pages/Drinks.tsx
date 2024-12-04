@@ -1,33 +1,33 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 const Drinks: React.FC = () => {
   const products = [
     {
       id: 1,
       name: "Classic Probiotic Lemonade",
       price: 4.99,
-      image: "/placeholder1.jpg",
+      image: "/simulacrum-ecom-template/placeholder1.jpg",
       description: "Our signature blend with a perfect balance of sweet and tart"
     },
     {
       id: 2,
       name: "Blueberry Mint Fusion",
       price: 5.49,
-      image: "/placeholder2.jpg",
+      image: "/simulacrum-ecom-template/placeholder2.jpg",
       description: "Fresh mint and wild blueberries create a refreshing combination"
     },
     {
       id: 3,
       name: "Ginger Spice Kombucha",
       price: 4.99,
-      image: "/placeholder3.png",
+      image: "/simulacrum-ecom-template/placeholder3.png",
       description: "A zingy blend with notes of ginger and citrus"
     },
     {
       id: 4,
       name: "Lavender Dream",
       price: 5.99,
-      image: "/placeholder4.png",
+      image: "/simulacrum-ecom-template/placeholder4.png",
       description: "Calming lavender with subtle honey notes"
     }
   ];
@@ -45,9 +45,9 @@ const Drinks: React.FC = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {products.map((product) => (
-            <a
+            <Link
               key={product.id}
-              href={`/product/${product.id}`}
+              to={`/product/${product.id}`}
               className="group"
             >
               <div className="bg-gray-50 rounded-lg overflow-hidden mb-4 aspect-w-4 aspect-h-5">
@@ -60,7 +60,7 @@ const Drinks: React.FC = () => {
               <h3 className="font-medium text-lg mb-2">{product.name}</h3>
               <p className="text-gray-600 mb-2">{product.description}</p>
               <p className="font-medium">${product.price.toFixed(2)}</p>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

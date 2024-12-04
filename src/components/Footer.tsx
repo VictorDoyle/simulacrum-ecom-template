@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -17,9 +18,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-medium mb-4">Shop</h4>
             <ul className="space-y-2">
-              <li><a href="/products" className="text-gray-600 hover:text-gray-900">All Products</a></li>
-              <li><a href="/bundles" className="text-gray-600 hover:text-gray-900">Bundles</a></li>
-              <li><a href="/wholesale" className="text-gray-600 hover:text-gray-900">Wholesale</a></li>
+              <li><Link to="/products" className="text-gray-600 hover:text-gray-900">All Products</Link></li>
+              <li><Link to="/bundles" className="text-gray-600 hover:text-gray-900">Bundles</Link></li>
+              <li><Link to="/wholesale" className="text-gray-600 hover:text-gray-900">Wholesale</Link></li>
             </ul>
           </div>
 
@@ -27,9 +28,9 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-medium mb-4">Company</h4>
             <ul className="space-y-2">
-              <li><a href="/about" className="text-gray-600 hover:text-gray-900">About Us</a></li>
-              <li><a href="/contact" className="text-gray-600 hover:text-gray-900">Contact</a></li>
-              <li><a href="/faq" className="text-gray-600 hover:text-gray-900">FAQ</a></li>
+              <li><Link to="/about" className="text-gray-600 hover:text-gray-900">About Us</Link></li>
+              <li><Link to="/contact" className="text-gray-600 hover:text-gray-900">Contact</Link></li>
+              <li><Link to="/faq" className="text-gray-600 hover:text-gray-900">FAQ</Link></li>
             </ul>
           </div>
 
@@ -56,8 +57,8 @@ const Footer: React.FC = () => {
         <div className="border-t mt-16 pt-8 flex justify-between items-center">
           <p className="text-gray-600">© 2024 taste. All rights reserved.</p>
           <div className="space-x-6">
-            <a href="/privacy" className="text-gray-600 hover:text-gray-900">Privacy Policy</a>
-            <a href="/terms" className="text-gray-600 hover:text-gray-900">Terms of Service</a>
+            <Link to="/privacy" className="text-gray-600 hover:text-gray-900">Privacy Policy</Link>
+            <Link to="/terms" className="text-gray-600 hover:text-gray-900">Terms of Service</Link>
           </div>
         </div>
       </div>
