@@ -1,1 +1,0 @@
-# simulacrum-ecom-template
