@@ -28,7 +28,7 @@ const Home: React.FC = () => {
           {/* Hero Image */}
           <div className="relative">
             <img
-              src={process.env.PUBLIC_URL + '/placeholder1.jpg'}
+              src='/placeholder1.jpg'
               alt="Colorful bottles of lemonade on ice"
               className="w-full h-auto rounded-lg shadow-xl"
             />

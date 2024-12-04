@@ -6,28 +6,28 @@ const Drinks: React.FC = () => {
       id: 1,
       name: "Classic Probiotic Lemonade",
       price: 4.99,
-      image: `${process.env.PUBLIC_URL}/placeholder1.jpg`,
+      image: `/placeholder1.jpg`,
       description: "Our signature blend with a perfect balance of sweet and tart"
     },
     {
       id: 2,
       name: "Blueberry Mint Fusion",
       price: 5.49,
-      image: `${process.env.PUBLIC_URL}/placeholder2.jpg`,
+      image: `/placeholder2.jpg`,
       description: "Fresh mint and wild blueberries create a refreshing combination"
     },
     {
       id: 3,
       name: "Ginger Spice Kombucha",
       price: 4.99,
-      image: `${process.env.PUBLIC_URL}/placeholder3.png`,
+      image: `/placeholder3.png`,
       description: "A zingy blend with notes of ginger and citrus"
     },
     {
       id: 4,
       name: "Lavender Dream",
       price: 5.99,
-      image: `${process.env.PUBLIC_URL}/placeholder4.png`,
+      image: `/placeholder4.png`,
       description: "Calming lavender with subtle honey notes"
     }
   ];

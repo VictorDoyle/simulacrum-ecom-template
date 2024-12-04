@@ -9,7 +9,7 @@ const Product: React.FC = () => {
           {/* Product Image */}
           <div className="bg-gray-50 rounded-lg overflow-hidden">
             <img
-              src={process.env.PUBLIC_URL + '/placeholder1.jpg'}
+              src='/placeholder1.jpg'
               alt="Product Name"
               className="w-full h-auto"
             />

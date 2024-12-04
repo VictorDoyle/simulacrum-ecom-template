@@ -26,7 +26,7 @@ const Recipes: React.FC = () => {
     {
       id: 2,
       name: "Blueberry Mint Spritzer",
-      image: `${process.env.PUBLIC_URL}/placeholder4.png`,
+      image: `/placeholder4.png`,
       time: "3 mins",
       difficulty: "Easy",
       ingredients: [
