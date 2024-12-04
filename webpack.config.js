@@ -8,9 +8,8 @@ module.exports = {
     filename: "bundle.js",
     publicPath:
       process.env.NODE_ENV === "production"
-        ? "/simulacrum/simulacrumShop/"
+        ? "/simulacrum-ecom-template/"
         : "/",
-
     clean: true,
   },
   mode: process.env.NODE_ENV === "production" ? "production" : "development",
@@ -64,7 +63,7 @@ module.exports = {
       filename: "index.html",
       publicPath:
         process.env.NODE_ENV === "production"
-          ? "/simulacrum/simulacrumShop/"
+          ? "/simulacrum-ecom-template/"
           : "/",
     }),
   ],

@@ -13,7 +13,7 @@ import './styles/index.css';
 
 const App: React.FC = () => {
   return (
-    <Router basename="/simulacrum/simulacrumShop">
+    <Router basename="/simulacrum-ecom-template/">
       <Header />
       <main>
         <Routes>
