@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.tsx",
@@ -68,6 +69,14 @@ module.exports = {
         process.env.NODE_ENV === "production"
           ? "/simulacrum-ecom-template/"
           : "/",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: "public/placeholder1.jpg", to: "placeholder1.jpg" },
+        { from: "public/placeholder2.jpg", to: "placeholder2.jpg" },
+        { from: "public/placeholder3.png", to: "placeholder3.png" },
+        { from: "public/placeholder4.png", to: "placeholder4.png" },
+      ],
     }),
   ],
 };
