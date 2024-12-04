@@ -50,7 +50,7 @@
   "scripts": {
     "start": "webpack serve --open",
     "predeploy": "NODE_ENV=production webpack",
-    "deploy": "gh-pages -d dist -b gh-pages-showcase",
+    "deploy": "gh-pages -d dist -b gh-pages",
     "build": "NODE_ENV=production webpack"
   }
 }
