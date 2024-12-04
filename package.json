@@ -46,7 +46,7 @@
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^4.1.1"
   },
-  "homepage": "https://VictorDoyle.github.io/simulacrum-ecom-template",
+  "homepage": "https://victordoyle.github.io/simulacrum-ecom-template",
   "scripts": {
     "start": "webpack serve --open",
     "predeploy": "NODE_ENV=production webpack",

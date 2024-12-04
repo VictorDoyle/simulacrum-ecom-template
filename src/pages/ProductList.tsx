@@ -7,14 +7,14 @@ const ProductList: React.FC = () => {
       id: 1,
       name: "Spicy Lemonade",
       price: 4.99,
-      image: "/simulacrum-ecom-template/placeholder2.jpg",
+      image: `${process.env.PUBLIC_URL}/placeholder2.jpg`,
       description: "A zingy blend with a hint of cayenne"
     },
     {
       id: 2,
       name: "Blue Lavender",
       price: 4.99,
-      image: "/simulacrum-ecom-template/placeholder1.jpg",
+      image: `${process.env.PUBLIC_URL}/placeholder1.jpg`,
       description: "Calming lavender with subtle citrus notes"
     },
   ];

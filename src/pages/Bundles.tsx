@@ -6,7 +6,7 @@ const Bundles: React.FC = () => {
       id: 'starter-pack',
       name: "Starter Pack",
       price: 24.99,
-      image: "/simulacrum-ecom-template/placeholder1.jpg",
+      image: `${process.env.PUBLIC_URL}/placeholder1.jpg`,
       description: "Perfect introduction to our flavors",
       includes: ["2x Classic Lemonade", "2x Blueberry Mint", "2x Ginger Spice"],
       savings: "Save 15%"
@@ -15,7 +15,7 @@ const Bundles: React.FC = () => {
       id: 'family-pack',
       name: "Family Pack",
       price: 45.99,
-      image: "/simulacrum-ecom-template/placeholder2.jpg",
+      image: `${process.env.PUBLIC_URL}/placeholder2.jpg`,
       description: "Great for sharing with the whole family",
       includes: ["4x Classic Lemonade", "4x Blueberry Mint", "4x Lavender Dream"],
       savings: "Save 20%"

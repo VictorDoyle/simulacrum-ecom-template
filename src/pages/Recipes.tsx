@@ -5,7 +5,7 @@ const Recipes: React.FC = () => {
     {
       id: 1,
       name: "Probiotic Mojito Mocktail",
-      image: "/simulacrum-ecom-template/placeholder3.png",
+      image: "/placeholder3.png",
       time: "5 mins",
       difficulty: "Easy",
       ingredients: [
@@ -26,7 +26,7 @@ const Recipes: React.FC = () => {
     {
       id: 2,
       name: "Blueberry Mint Spritzer",
-      image: "/simulacrum-ecom-template/placeholder4.png",
+      image: `${process.env.PUBLIC_URL}/placeholder4.png`,
       time: "3 mins",
       difficulty: "Easy",
       ingredients: [
